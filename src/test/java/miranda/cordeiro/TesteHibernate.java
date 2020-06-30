@@ -5,11 +5,19 @@ import java.util.List;
 import org.junit.Test;
 
 import dao.DaoGeneric;
+import main.Menu;
 import model.Telefone;
 import model.UsuarioPessoa;
 
 public class TesteHibernate {
 
+	@Test
+	public void testaFront() {
+		Menu menu = new Menu();
+		menu.alterarUsuario();
+	}
+	
+	
 	@Test
 	public void testeHibernateUtil() {
 		DaoGeneric<UsuarioPessoa> daoGeneric = new DaoGeneric<UsuarioPessoa>();
