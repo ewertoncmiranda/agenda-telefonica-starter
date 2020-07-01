@@ -95,7 +95,22 @@ public class Menu {
 
 		dao.atualizarMerge(user);
 		System.out.println(dao.pesquisar_Dois(select, UsuarioPessoa.class));
+		System.out.println("Usuario Alterado com Sucesso!");
 
+	}
+	
+	public void excluirUsuario() {
+		this.listarUsuarios();
+		System.out.println("ESCOLHA O ID DO USUARIO A EXCLUIR\n");
+
+		Long select = poc.nextLong();
+		user = dao.pesquisar_Dois(select, UsuarioPessoa.class) ;
+		System.out.println(user);
+		
+		dao.deletarPorId(user);
+		this.listarUsuarios();
+		System.out.println("Usuario do ID "+select+" excluido com sucesso!!");
+		
 	}
 
 }

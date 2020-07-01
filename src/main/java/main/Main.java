@@ -9,7 +9,7 @@ import model.UsuarioPessoa;
 public class Main {
 
 	public static void main(String[] args) {
-		Menu menu ;
+		Menu menu = new Menu();
 		
 		//Criar um menu com as opções de CRUD
 		int control = -1 ;
@@ -27,10 +27,21 @@ public class Main {
 			switch (control) {
 			
 			case 1:
-			
-				
+				menu.salvarUsuarioPessoa();				
 			break;
-
+			
+			case 2 :
+				menu.alterarUsuario();
+			break;
+			
+			case 3:
+				menu.listarUsuarios();
+			break;
+			
+			case 4:
+				menu.excluirUsuario();
+			break ;
+			
 			default:
 				break;
 			}//fim switch
