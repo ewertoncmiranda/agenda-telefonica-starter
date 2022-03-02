@@ -1,16 +1,16 @@
-package main;
+package miranda.agendatelefonica.utils;
 
 import java.util.List;
 import java.util.Scanner;
 
-import dao.DaoGeneric;
-import model.Telefone;
-import model.UsuarioPessoa;
+import miranda.agendatelefonica.dao.GenericEntityManager;
+import miranda.agendatelefonica.model.Telefone;
+import miranda.agendatelefonica.model.UsuarioPessoa;
 
 public class Menu {
 
 	private Scanner poc = new Scanner(System.in);
-	private DaoGeneric<UsuarioPessoa> dao = new DaoGeneric<UsuarioPessoa>();
+	private GenericEntityManager<UsuarioPessoa> dao = new GenericEntityManager<UsuarioPessoa>();
 	private String dialogo;
 	private UsuarioPessoa user = new UsuarioPessoa();
 
@@ -40,7 +40,7 @@ public class Menu {
 
 		user = dao.pesquisar(user);
 
-		DaoGeneric<Telefone> daoTel = new DaoGeneric<Telefone>();
+		GenericEntityManager<Telefone> daoTel = new GenericEntityManager<Telefone>();
 		Telefone tel = new Telefone();
 
 		System.out.println("Insira o Telefone");

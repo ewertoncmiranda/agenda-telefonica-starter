@@ -1,4 +1,4 @@
-package miranda.cordeiro;
+package miranda.agendatelefonica.utils;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

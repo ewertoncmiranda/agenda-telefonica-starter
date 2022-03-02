@@ -1,17 +1,15 @@
-package main;
+package miranda.agendatelefonica;
+
+import miranda.agendatelefonica.utils.Menu;
 
 import java.util.Scanner;
-
-import dao.DaoGeneric;
-import model.Telefone;
-import model.UsuarioPessoa;
 
 public class Main {
 
 	public static void main(String[] args) {
 		Menu menu = new Menu();
 		
-		//Criar um menu com as opções de CRUD
+		//Criar um menu com as opï¿½ï¿½es de CRUD
 		int control = -1 ;
 		
 		while (control != 0) {
@@ -19,8 +17,8 @@ public class Main {
 			
 		   	
 			System.out.println("************CRUD DE USUARIO************");
-			System.out.println("Selecione a opção desejada:\n");
-			System.out.println(" 1-Adicionar Usuario\n 2-Alterar Usuario\n 3-Listar todos os Usuarios \n 4-Excluir Usuario\n 0-Fechar Aplicação");
+			System.out.println("Selecione a opcao desejada:\n");
+			System.out.println(" 1-Adicionar Usuario\n 2-Alterar Usuario\n 3-Listar todos os Usuarios \n 4-Excluir Usuario\n 0-Fechar Aplicaï¿½ï¿½o");
 			
 			control= in.nextInt();
 			
@@ -45,12 +43,6 @@ public class Main {
 			default:
 				break;
 			}//fim switch
-						
-			
 		}//while
-		
-		
-
 	}//mains
-
 }

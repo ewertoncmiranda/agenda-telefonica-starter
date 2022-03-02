@@ -1,14 +1,13 @@
-package dao;
+package miranda.agendatelefonica.dao;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 
-import miranda.cordeiro.HibernateUtil;
+import miranda.agendatelefonica.utils.HibernateUtil;
 
-public class DaoGeneric<T> {
+public class GenericEntityManager<T> {
 
 	private EntityManager entityManager = HibernateUtil.getEntityManager();
 

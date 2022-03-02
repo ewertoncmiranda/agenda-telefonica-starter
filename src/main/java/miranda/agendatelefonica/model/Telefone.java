@@ -1,4 +1,4 @@
-package model;
+package miranda.agendatelefonica.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

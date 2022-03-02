@@ -1,4 +1,6 @@
-package model;
+package miranda.agendatelefonica.model;
+
+import miranda.agendatelefonica.model.Telefone;
 
 import java.util.List;
 
